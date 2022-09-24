@@ -73,7 +73,7 @@ define Build/Compile/kmod
 		$(PKG_MAKE_FLAGS) \
 		M="$(PKG_BUILD_DIR)" \
 		CONFIG_FAST_CLASSIFIER=m \
-		EXTRA_CFLAGS+="-DSFE_SUPPORT_IPV6" \
+		EXTRA_CFLAGS+="-DSFE_SUPPORT_IPV6 -Ofast" \
 		modules
 endef
 

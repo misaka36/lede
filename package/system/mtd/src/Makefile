@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS += -Wall
+CFLAGS += -Wall -Ofast -pipe
 LDFLAGS += -lubox
 
 obj = mtd.o jffs2.o crc32.o md5.o

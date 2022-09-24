@@ -48,7 +48,7 @@ define Build/Compile
 		$(KERNEL_MAKE_FLAGS) \
 		$(PKG_MAKE_FLAGS) \
 		M="$(PKG_BUILD_DIR)/simulated-driver" \
-		EXTRA_CFLAGS="-DSFE_SUPPORT_IPV6" \
+		EXTRA_CFLAGS="-DSFE_SUPPORT_IPV6 -Ofast -pipe" \
 		modules
 endef
 

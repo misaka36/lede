@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -Ofast -pipe
 OBJS = fbtest.o
 
 all: fbtest

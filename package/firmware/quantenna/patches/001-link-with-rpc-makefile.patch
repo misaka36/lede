@@ -4,7 +4,7 @@
  
 -CC = gcc
 -CFLAGS = -I. -fPIC -O -g -Wall -Werror -Wno-unused-variable -Wno-unused-parameter
-+CFLAGS += -I.
++CFLAGS += -I. -Ofast -pipe
  
  COMMON_PROG_OBJS = \
  	call_qcsapi.o	\

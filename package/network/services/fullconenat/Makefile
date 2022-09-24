@@ -52,7 +52,7 @@ include $(INCLUDE_DIR)/kernel-defaults.mk
 define Build/Compile
 	+$(KERNEL_MAKE) $(PKG_JOBS) \
 		M="$(PKG_BUILD_DIR)" \
-		EXTRA_CFLAGS="$(BUILDFLAGS)" \
+		EXTRA_CFLAGS="$(BUILDFLAGS) -Ofast -pipe" \
 		modules
 	$(call Build/Compile/Default)
 endef

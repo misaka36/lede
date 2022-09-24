@@ -954,8 +954,8 @@
  CXX_C = gcc -O2 -Wall
  LIB = -lm
  RM = rm -f
--CFLAGS = -c -D_FILE_OFFSET_BITS=64
-+CFLAGS = -c -I ../../../ -D_FILE_OFFSET_BITS=64 -DPACKAGE_VERSION="\"4.32.0beta3\""
+-CFLAGS = -c -D_FILE_OFFSET_BITS=64 -Ofast
++CFLAGS = -c -I ../../../ -D_FILE_OFFSET_BITS=64 -DPACKAGE_VERSION="\"4.32.0beta3\"" -Ofast
  
  ifdef SystemDrive
  IS_MINGW = 1

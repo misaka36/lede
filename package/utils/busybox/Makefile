@@ -60,7 +60,6 @@ endef
 define Package/busybox-selinux
   $(call Package/busybox/Default)
   TITLE += with SELinux support
-  DEPENDS += +libselinux
   VARIANT:=selinux
   PROVIDES:=busybox
 endef
